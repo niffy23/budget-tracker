@@ -1,0 +1,222 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eae7dc;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Controls (Dark mode + Logout) ===== */
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===== Dashboard Summary Cards ===== */
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1 1 28%;
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.income-card {
+  border-top: 6px solid green;
+}
+
+.expense-card {
+  border-top: 6px solid red;
+}
+
+.balance-card {
+  border-top: 6px solid blue;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+
+/* ===== Transaction Form ===== */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1 1 180px;
+}
+
+form button {
+  flex: 1 1 100%;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.btn.small {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.btn.primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #0056b3;
+}
+
+.btn.secondary {
+  background: #ddd;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background: #bbb;
+}
+
+/* ===== Transaction List ===== */
+#transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+#transaction-list li {
+  background: #fff;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#transaction-list li.income {
+  border-left: 6px solid green;
+}
+
+#transaction-list li.expense {
+  border-left: 6px solid red;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+
+
+  
+/* ===== Charts ===== */
+canvas {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+
+/* ===== Dark Mode ===== */
+body.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .card {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background: #333;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+body.dark-mode #transaction-list li {
+  background: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 90%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form input, form select, form button {
+    flex: 1 1 100%;
+  }
+}
