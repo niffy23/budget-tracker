@@ -207,10 +207,16 @@ body.dark-mode #transaction-list li {
     flex-direction: column;
     align-items: center;
   }
-
-  .card {
-    flex: 1 1 90%;
-  }
+.card {
+    width: 80%;
+  background: #fff;
+  padding: 40px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
 
   form {
     flex-direction: column;
@@ -220,3 +226,4 @@ body.dark-mode #transaction-list li {
     flex: 1 1 100%;
   }
 }
+
