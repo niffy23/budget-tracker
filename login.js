@@ -87,8 +87,9 @@ loginForm.addEventListener("submit", (e) => {
     }
 
     // Redirect to budget app
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Invalid username or password");
   }
 });
+
