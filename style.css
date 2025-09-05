@@ -208,7 +208,7 @@ body.dark-mode #transaction-list li {
     align-items: center;
   }
 .card {
-    width: 80%;
+  width: 80%;
   background: #fff;
   padding: 40px;
   margin: 10px;
@@ -217,7 +217,6 @@ body.dark-mode #transaction-list li {
   text-align: center;
   transition: transform 0.2s;
 }
-
   form {
     flex-direction: column;
   }
@@ -226,4 +225,5 @@ body.dark-mode #transaction-list li {
     flex: 1 1 100%;
   }
 }
+
 
