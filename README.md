@@ -1,11 +1,7 @@
 # budget-tracker
 A simple and easy-to-use web application that helps you manage your income and expenses.
 This app was built using **HTML**, **CSS** and **JavaScript**
-
-
 ---
-
-
 ## Features
 -Add income and expense transactions
 -View total balance, income and expenses.
